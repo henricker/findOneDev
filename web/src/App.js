@@ -1,12 +1,12 @@
 import React from 'react';
 
 //import pages
-import FindDev from './pages/index'
+import Index from './pages/index'
 
 function App() {
   return (
     <div className="App">
-      <FindDev/>
+      <Index/>
     </div>
   );
 }
