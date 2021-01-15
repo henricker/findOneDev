@@ -15,23 +15,23 @@ import './style.css';
 export default () => {
     return(
     <>
+    <header> 
+        <div className="logo"><Logo/></div>
+        <div className="location">
+            <strong>Boa Viagem</strong>
+            <p>Ceará</p>
+        </div>
+    </header>
     <div className="container">
-        <header> 
-            <div className="logo"><Logo/></div>
-            <div className="location">
-                <strong>Boa Viagem</strong>
-                <p>Ceará</p>
-            </div>
-        </header>
         <main>
             <div className="presentation">
                 <h1>Reuniremos toda a comunidade dev da sua cidade!</h1>
                 <p>Encontre outro dev e façam grandes projetos juntos!</p>
             </div>
             <section className="meet">
-                <img src={time1} alt="development group" ></img>
-                <img src={time} alt="development group" ></img>
-                <button>Encontre um dev!</button>
+                <img className="time1" src={time1} alt="development group" ></img>
+                <img className="time2" src={time} alt="development group" ></img>
+                <div><button>Encontre um dev!</button></div>
             </section>
         </main>
     </div>
