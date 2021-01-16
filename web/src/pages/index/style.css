@@ -1,4 +1,4 @@
-body {
+body.index-page {
     background: linear-gradient(329.54deg, #5b45bd 0%, #7631e4 100%);
     min-height: 100vh;
     text-align: center;
@@ -12,22 +12,29 @@ body {
     position: relative;
 }
 
-header {
+header.index-header {
+    width: 100%;
     display: flex;
-    padding: 10px 60px;
+    padding: 10px 145px;
     align-items: center;
     justify-content: space-between;
 
     position: relative;
 }
 
+.location {
+    text-align: justify;
+}
+
 .location strong {
     height: 16vh;
     color: white;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .location p{
+    font-size: 16px;
     color: white;
 }
 
@@ -42,17 +49,29 @@ main p {
     font-size: 20px;
 }
 
+hr.allow {
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
 .presentation {
-    margin-top: -30px;
+    margin-top: 10px;
     padding: 0 10px;
     position: relative;
 }
 
+hr.bellow {
+    margin-top: 5px;
+}
+
+section img.time1, .time2 {
+    padding: 20px 60px; 
+}
 
 section img.time2 {
     margin-top: -50px;
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
 }
 
 button {
@@ -113,9 +132,13 @@ button:hover {
     main p {
         font-size: 18px;
     }
+
+    .location {
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 650px) {
     main h1 {
         font-size: 20px;
     }
@@ -124,8 +147,28 @@ button:hover {
         font-size: 14px;
     }
 
+    header.index-header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    header.index-header .logo {
+        margin-bottom: 20px;
+    }
+
+
     .time1 {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 580px) {
+    .location strong {
+        font-size: 15px;
+    }
+
+    .location p {
+        font-size: 10px;
+    }
 }
