@@ -4,7 +4,7 @@ import './style.css';
 export default () => {
     return (
         <>
-        <div>oi</div>
+        <div className="mapContainer"></div>
         </>
     );
 } 
