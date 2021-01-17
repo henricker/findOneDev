@@ -1,8 +1,8 @@
-.map-page {
-    width: 100%;
+.leaflet-container {
+    width: 70%;
     height: 100vh;
 }
 
-.map-element {
-    display: inline-block;
+.map-page {
+    display: flex;
 }
