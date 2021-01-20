@@ -4,7 +4,7 @@
 
 - Front-End
     - [x] Index-page
-    - [x] #Map-page
+    - [x] Map-page
     - []  Create-dev-page
     - []  dev-presentation-page
 
