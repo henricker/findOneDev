@@ -9,7 +9,16 @@ body.index-page {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2%;
+    background-image: url('../../images/teamDev.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
+    height: 70vh;
+}
+
+section.meet.location {
+    display: none;
 }
 
 header.index-header {
@@ -39,13 +48,13 @@ header.index-header {
 }
 
 main h1 {
-    color: white;
+    color: #fff;
     font-size: 26px;
     font-weight: bold;
 }
 
 main p {
-    color: white;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -74,7 +83,7 @@ section img.time2 {
     height: 550px;
 }
 
-button {
+button.findDevs {
     position: absolute;
     bottom: 50px;
     right: 63px;
@@ -91,7 +100,7 @@ button {
     transition: .2s;
 }
 
-button:hover {
+button.findDevs:hover {
     transform: scale(1.1);
     background-color: #45348f;
 }
@@ -109,22 +118,9 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    .container, button {
-        position: static;
-    }
-
-    .time2 {
-        position: static;
-    }
-
-    button {
-        display: inline-block;
-        margin-bottom: 30px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-
     main h1 {
         font-size: 24px;
     }
@@ -136,6 +132,7 @@ button:hover {
     .location {
         text-align: center;
     }
+    
 }
 
 @media screen and (max-width: 650px) {
@@ -156,11 +153,10 @@ button:hover {
         margin-bottom: 20px;
     }
 
-
-    .time1 {
-        display: none;
+    button.findDevs {
+        left: 50%;
+        transform: translate(-50%);
     }
-
 }
 
 @media screen and (max-width: 580px) {

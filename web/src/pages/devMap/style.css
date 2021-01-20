@@ -6,3 +6,52 @@
 .map-page {
     display: flex;
 }
+
+.dev-information {
+    background: linear-gradient(329.54deg, #5b45bd 0%, #7631e4 100%);
+    text-align: center;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+.dev-information h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.dev-information img {
+    border-radius: 50%;
+}
+
+.dev-information img:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.min-details {
+    border: 1px solid black;
+}
+
+.dev-information p{
+    font-size: 16px;
+    color: white;
+
+    transition: all .2s;
+}
+
+.dev-information p:hover {
+    transform: scale(1.1);
+}
+
+.dev-information  a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.dev-information .details-link {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background-color: #7364b8;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .2);
+}

@@ -15,6 +15,7 @@ aside {
 
 header .presentation-map {
     margin-top: 20px;
+    padding: 0 10px;
 }
 
 .presentation-map h1 {
@@ -36,4 +37,27 @@ header.aside-header {
 footer.aside-footer {
     margin-bottom: 30px;
     color: white;
+}
+
+@media screen and (max-width: 870px) {
+    .presentation-map h1 {
+        font-size: 15px;
+    }
+
+    .presentation-map p {
+        font-size: 10px;
+    }
+
+    .aside-footer strong {
+        font-size: 13px;
+    }
+
+    .aside-footer p {
+        font-size: 9px;
+    }
+
+    .logo-image {
+        width: 50px;
+        height: 50px;
+    }
 }

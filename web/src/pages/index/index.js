@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../components/logo';
 
 //import images
-import time from '../../images/ok.png';
+import team from '../../images/teamDev.png';
 import time1 from '../../images/time.png';
 
 //import styles
@@ -33,13 +33,10 @@ export default () => {
                 <hr className="allow"/>
                 <h1>Reuniremos toda a comunidade dev da sua cidade!</h1>
                 <p>Encontre outro dev e façam grandes projetos juntos!</p>
-                <hr className="bellow"/>
             </div>
             
             <section className="meet">
-                <img className="time1" src={time1} alt="development group" ></img>
-                <img className="time2" src={time} alt="development group" ></img>
-                <div><Link to="devs"><button>Encontre um dev!</button></Link></div>
+                <div><Link to="devs"><button className="findDevs">Encontre um dev!</button></Link></div>
             </section>
         </main>
     </div>
