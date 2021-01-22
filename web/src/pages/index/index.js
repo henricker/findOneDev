@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 //import components
 import Logo from '../../components/logo';
+import ButtonComponent from '../../components/button';
 
 //import images
 import team from '../../images/teamDev.png';
@@ -36,7 +37,7 @@ export default () => {
             </div>
             
             <section className="meet">
-                <div><Link to="devs"><button className="findDevs">Encontre um dev!</button></Link></div>
+                <div className="index-button-component"><Link to="devs"><ButtonComponent content="Encontre um dev!"/></Link></div>
             </section>
         </main>
     </div>

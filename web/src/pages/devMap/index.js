@@ -1,10 +1,12 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 
 //import components
 import Sidebar from '../../components/sidebar';
+import ButtonComponent from '../../components/button';
 import 'leaflet/dist/leaflet.css';
 import './style.css';
 
@@ -25,8 +27,9 @@ export default () => {
     return (
         <>
         <div className="map-page">
+           
             <Sidebar className="map-page-aside"/>
-            <MapContainer center={position} zoom={16}>
+            <MapContainer center={position} zoom={16} className="map-aside">
                 <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -49,6 +52,7 @@ export default () => {
                     </Popup>
                 </Marker>
             </MapContainer>
+            <div className="map-button-component"><Link to="#"><ButtonComponent content="Conecte-se"/></Link></div>
         </div>
         </>
     );

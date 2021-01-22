@@ -16,6 +16,6 @@
 ![index page](./presentation/index.png)
 
 ## Find devs with map
-![Map page](./presentation/pageMap.png)
+![Map page](./presentation/map-page.png)
 
 ## Loading...
