@@ -1,6 +1,14 @@
+const express = require('express');
 const path = require('path');
-const server = require('express')();
+const app = express();
 
-require('dotenv').config({path: path.resolve(__dirname, '.env')});
+require('dotenv').config({path: path.resolve(__dirname, '..', '.env')});
 
-server.listen(process.env.PORT, console.log(`Running server in ${process.env.PORT} port`))
+//import routes
+const devRouter = require('./routes/dev');
+
+//ap config
+    app.use(express.json());
+    app.use(devRouter);
+
+app.listen(process.env.PORT, () => console.log(`Server listening on port ${process.env.PORT}`));
