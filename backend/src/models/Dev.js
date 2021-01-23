@@ -1,6 +1,6 @@
 const mongoose = require('../database/connection');
 
-const userSchema = mongoose.Schema({
+const devSchema = mongoose.Schema({
     name: {
         type: 'string',
         require: true,
@@ -26,10 +26,20 @@ const userSchema = mongoose.Schema({
         require: true,
     },
 
+    email: {
+        type: 'string',
+        require: true,
+        unique: true,
+        lowercase: true,
+    },
+
     createdAt: {
         type: 'date',
         default: new Date(),
+        required: true,
     }
 });
 
-const User = mongoose.model('User', userSchema);
+const Dev = mongoose.model('Dev', devSchema);
+
+module.exports = Dev;
