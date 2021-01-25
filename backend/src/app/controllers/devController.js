@@ -1,6 +1,6 @@
 const Dev = require('../model/Dev');
 const axios = require('axios');
-
+const parseStringAsArray = require('../../util/parseStringToArray');
 module.exports = {
 
     async store(request, response) {
@@ -9,7 +9,7 @@ module.exports = {
                 github_username: request.body.github_username,
                 latitude: request.body.latitude,
                 longitude: request.body.longitude,
-                techs: request.body.techs,
+                techs: parseStringAsArray(request.body.techs),
             }
 
             //basic validations
