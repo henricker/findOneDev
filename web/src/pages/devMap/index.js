@@ -52,7 +52,7 @@ export default () => {
                     </Popup>
                 </Marker>
             </MapContainer>
-            <div className="map-button-component"><Link to="#"><ButtonComponent content="Conecte-se"/></Link></div>
+            <div className="map-button-component"><Link to="/createDev"><ButtonComponent content="Conecte-se"/></Link></div>
         </div>
         </>
     );
