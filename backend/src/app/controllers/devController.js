@@ -26,8 +26,11 @@ module.exports = {
                 "type" : "Point",
                 "coordinates" : [ dev.latitude, dev.longitude]
             }
+
+            if(await Dev.findOne({github_username: dev.github_username}))
+                return response.status(400).send({error: "User alredy exists!"});
             
-            const dataGithubUser = await axios.get('https://api.github.com/users/henricker');
+            const dataGithubUser = await axios.get(`https://api.github.com/users/${dev.github_username}`);
             
             dev['name'] = dataGithubUser.data.name;
             dev['bio'] = dataGithubUser.data.bio;
@@ -36,7 +39,10 @@ module.exports = {
             await Dev.create({
                 name: dev.name,
                 github_username: dev.github_username,
-                location: dev.location
+                location: dev.location,
+                techs: dev.techs,
+                avatar_url: dev.avatar_url,
+                bio: dev.bio
             });
 
             return response.send({dev});
@@ -46,6 +52,12 @@ module.exports = {
         return response.send({Error: "Access database denied!"});
     }
         
+    },
+
+    async index(request, response) {
+        const Devs = await Dev.find();
+
+        return response.send({Devs});
     }
 
 

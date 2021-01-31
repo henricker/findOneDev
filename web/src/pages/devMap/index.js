@@ -1,5 +1,5 @@
 
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
@@ -13,6 +13,9 @@ import './style.css';
 import github from '../../images/githuub.svg';
 import myPhoto from '../../images/myPhoto.jpg';
 
+//import api base
+import api from '../../util/api';
+
 let myIcon = new Icon({
      iconUrl: github,
      iconSize: [38, 95],
@@ -24,6 +27,21 @@ let myIcon = new Icon({
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     const position = [-5.121283598809426, -39.73063941829233];
+    
+    const [devs, setDevs] = useState([]);
+
+    useEffect(() => {
+        function loadDevs() {
+            api.get('/index').then(data => {
+                console.log(data);
+                setDevs(data.data);
+            })
+        }
+
+        loadDevs();
+    }, [devs, setDevs]);
+    
+    
     return (
         <>
         <div className="map-page">

@@ -4,6 +4,7 @@ const routes = require('express').Router();
 const devController = require('../app/controllers/devController');
 
 routes.post('/dev', devController.store);
+routes.get('/index', devController.index);
 
 module.exports = routes;
 

@@ -15,8 +15,10 @@ import time1 from '../../images/time.png';
 import '../../components/global/style.css';
 import './style.css';
 
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
+
     return(
     <>
     <body className="index-page">
