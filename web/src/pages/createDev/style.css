@@ -3,8 +3,8 @@ body {
 }
 
 .map-form {
-    width: 100%;
-    height: 40vh;
+    width: 80%;
+    height: 30vh;
     border: 1px solid black;
     display: inline-block;
     cursor: pointer;
@@ -13,7 +13,7 @@ body {
 h1.network {
     font-size: 25px;
     color: #444;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-container {
@@ -41,7 +41,7 @@ h1.network {
 .form-createDev input.input-createDev {
     padding: 10px 20px;
     width: 70%;
-    margin-bottom: 21px;
+    margin-bottom: 10px;
     border: 2px solid #ccc;
     border-radius: 30px;
     transition: .2s;

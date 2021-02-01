@@ -32,6 +32,7 @@ export default () => {
                 lat: location.coordinates.lat,
                 lng: location.coordinates.lng
             });
+            setPosition([location.coordinates.lat, location.coordinates.lng]);
         }
         else
             alert(location.error.message);
@@ -43,16 +44,16 @@ export default () => {
             <div className="form-container">
                 <form className="form-createDev">
                     <h1 className="network">Conecte-se!</h1>
-                    <label for="email">Email:</label>
+                    <label>Email:</label>
                     <div><input type="email" className="input-createDev"placeholder="Email..." name="email"/></div>
-                    <label for="github_username">Github:</label>
+                    <label>Github:</label>
                     <div><input type="text" className="input-createDev" placeholder="Github username..." name="github_username"/></div>
-                    <label for="techs">Techs:</label>
+                    <label>Techs:</label>
                     <div><input type="text" className="input-createDev" placeholder="Techs... ex: nodejs, reactjs..." name="techs"/></div>
 
                     <label>Selecione o seu endereço no mapa abaixo: </label>
                     <div className="map-createDev" >
-                        <MapContainer center={position} zoom={16} className="map-form">
+                        <MapContainer center={position} zoom={16} className="map-form" zoomControl={false}>
                         <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

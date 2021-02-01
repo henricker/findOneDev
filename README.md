@@ -5,11 +5,15 @@
 - Front-End
     - [x] Index-page
     - [x] Map-page
-    - []  Create-dev-page
+    - [x]  Create-dev-page
     - []  dev-presentation-page
+    - [x] connect with backend api
 
 - Back-End
-    - Loading...
+    - [x] model Dev created
+    - [x] connect with mongo database
+    - [x] routes created
+    - [x] config to connect with others servers
 
 
 ## Index page
@@ -18,4 +22,10 @@
 ## Find devs with map
 ![Map page](./presentation/map-page.png)
 
+## Create dev page
+![Create dev](./presentation/create-dev.png)
+
 ## Loading...
+
+## Sugestões?
+- Criticism and suggestions are always welcome. If I don't respond in time, I'm sorry, as college has been a rush lately.
