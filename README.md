@@ -27,5 +27,5 @@
 
 ## Loading...
 
-## Sugestões?
+## Criticism and suggestions?
 - Criticism and suggestions are always welcome. If I don't respond in time, I'm sorry, as college has been a rush lately.
