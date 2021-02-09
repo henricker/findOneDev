@@ -6,7 +6,7 @@ import './style.css';
 export default (props) => {
     if(props.execute) {
         return(
-            <button className="component-button" onClick={props.execute}>{props.content}</button>
+            <button type="submit" className="component-button" onClick={props.execute}>{props.content}</button>
         );
     }
     return(
